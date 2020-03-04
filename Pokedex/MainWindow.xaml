@@ -1,0 +1,54 @@
+﻿<Window x:Class="Pokedex.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pokedex"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="800">
+    <Grid>
+        <Grid Margin="455,10,10,0" Background="#44444444" Height="200" VerticalAlignment="Top">
+            <StackPanel Orientation = "Horizontal">
+                <Image Name="pkImage" Width = "200" VerticalAlignment = "Top" Margin = "30"/>
+            </StackPanel>
+        </Grid>
+
+        <Grid Margin="0,0,350,0" Height="420">
+            <ListBox x:Name="ListBoxPokemon" Background="LightBlue" Grid.Row="4" Grid.Column="0" SelectionChanged="ListBoxPokemon_SelectionChanged">
+            </ListBox>
+
+            <Button Content="Create" Margin="0,367,341,0" Click="Button_Click"></Button>
+        </Grid>
+
+        <Grid Grid.Column= "1" Background="pink" Margin="455,217,10,7">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label x:Name="LabelId" Grid.Row="0" Grid.Column="0" Background="Bisque" >Id</Label>
+            <Label x:Name="LabelName" Grid.Row="1" Grid.Column="0" Background="Bisque">Name</Label>
+            <Label x:Name="LabelType" Grid.Row="2" Grid.Column="0" Background="Bisque">Type</Label>
+            <Label x:Name="LabelDescription" Grid.Row="3" Grid.Column="0" Background="Bisque">Description</Label>
+            <Label x:Name="LabelHeight" Grid.Row="4" Grid.Column="0" Background="Bisque">Height</Label>
+            <Label x:Name="LabelWeight" Grid.Row="5" Grid.Column="0" Background="Bisque">Weight</Label>
+
+            <TextBox x:Name="TextId" Grid.Row="0" Grid.Column="1" Background="LightGreen" IsEnabled="False" IsReadOnlyCaretVisible="True"></TextBox>
+            <TextBox x:Name="TextName" Grid.Row="1" Grid.Column="1" Background="LightGreen"></TextBox>
+            <TextBox x:Name="TextType" Grid.Row="2" Grid.Column="1" Background="LightGreen"></TextBox>
+            <TextBox x:Name="TextDescription" Grid.Row="3" Grid.Column="1" Background="LightGreen"></TextBox>
+            <TextBox x:Name="TextHeight" Grid.Row="4" Grid.Column="1" Background="LightGreen"></TextBox>
+            <TextBox x:Name="TextWeight" Grid.Row="5" Grid.Column="1" Background="LightGreen"></TextBox>
+        </Grid>
+        
+    </Grid>
+</Window>
