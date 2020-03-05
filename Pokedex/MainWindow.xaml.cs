@@ -64,10 +64,16 @@ namespace Pokedex
             
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Create_Click(object sender, RoutedEventArgs e)
         {
             Create p = new Create();
             p.Show();
+        }
+
+        private void Search_Click(object sender, RoutedEventArgs e)
+        {
+            Search s = new Search();
+            s.Show();
         }
     }
 }

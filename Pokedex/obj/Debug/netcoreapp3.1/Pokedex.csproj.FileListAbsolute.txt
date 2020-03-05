@@ -46,3 +46,10 @@ C:\Users\Tech-W148Bir\source\repos\PokedexApp\Pokedex\obj\Debug\netcoreapp3.1\Po
 C:\Users\Tech-W148Bir\source\repos\PokedexApp\Pokedex\obj\Debug\netcoreapp3.1\Pokedex.pdb
 C:\Users\Tech-W148Bir\source\repos\PokedexApp\Pokedex\obj\Debug\netcoreapp3.1\Create.g.cs
 C:\Users\Tech-W148Bir\source\repos\PokedexApp\Pokedex\obj\Debug\netcoreapp3.1\Create.baml
+C:\Users\Tech-W148Bir\source\repos\PokedexApp\Pokedex\obj\Debug\netcoreapp3.1\PokedexWPF.g.cs
+C:\Users\Tech-W148Bir\source\repos\PokedexApp\Pokedex\bin\Debug\netcoreapp3.1\MaterialDesignColors.dll
+C:\Users\Tech-W148Bir\source\repos\PokedexApp\Pokedex\bin\Debug\netcoreapp3.1\MaterialDesignThemes.Wpf.dll
+C:\Users\Tech-W148Bir\source\repos\PokedexApp\Pokedex\obj\Debug\netcoreapp3.1\App.baml
+C:\Users\Tech-W148Bir\source\repos\PokedexApp\Pokedex\obj\Debug\netcoreapp3.1\PokedexWPF.baml
+C:\Users\Tech-W148Bir\source\repos\PokedexApp\Pokedex\obj\Debug\netcoreapp3.1\Search.g.cs
+C:\Users\Tech-W148Bir\source\repos\PokedexApp\Pokedex\obj\Debug\netcoreapp3.1\Search.baml

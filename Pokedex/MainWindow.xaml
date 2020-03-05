@@ -17,7 +17,8 @@
             <ListBox x:Name="ListBoxPokemon" Background="LightBlue" Grid.Row="4" Grid.Column="0" SelectionChanged="ListBoxPokemon_SelectionChanged">
             </ListBox>
 
-            <Button Content="Create" Margin="0,367,341,0" Click="Button_Click"></Button>
+            <Button Content="Create" Margin="0,367,341,0" Click="Create_Click"></Button>
+            <Button Content="Search" Margin="131,378,210,10" Click="Search_Click"></Button>
         </Grid>
 
         <Grid Grid.Column= "1" Background="pink" Margin="455,217,10,7">
