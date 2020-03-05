@@ -34,7 +34,7 @@ namespace Pokedex
 
                 if (!string.IsNullOrEmpty(SearchBar.Text))
                 {
-                    query = query.Where(e => e.Pname.Contains(SearchBar.Text));
+                    query = query.Where(e => e.Pname.StartsWith(SearchBar.Text));
                     SearchList.ItemsSource = query.ToList();
                 }
                 else

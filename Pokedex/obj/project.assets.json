@@ -5080,11 +5080,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tech-W148Bir\\source\\repos\\PokedexApp\\Pokedex\\Pokedex.csproj",
+      "projectUniqueName": "C:\\Users\\Tech-W148Bir\\source\\repos\\PokedexProject\\Pokedex\\Pokedex.csproj",
       "projectName": "Pokedex",
-      "projectPath": "C:\\Users\\Tech-W148Bir\\source\\repos\\PokedexApp\\Pokedex\\Pokedex.csproj",
+      "projectPath": "C:\\Users\\Tech-W148Bir\\source\\repos\\PokedexProject\\Pokedex\\Pokedex.csproj",
       "packagesPath": "C:\\Users\\Tech-W148Bir\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tech-W148Bir\\source\\repos\\PokedexApp\\Pokedex\\obj\\",
+      "outputPath": "C:\\Users\\Tech-W148Bir\\source\\repos\\PokedexProject\\Pokedex\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Tech-W148Bir\\AppData\\Roaming\\NuGet\\NuGet.Config",
