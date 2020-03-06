@@ -47,13 +47,12 @@ namespace Pokedex
 
         public void Logic()
         {
-            /*
+            
             Random random = new Random();
             List<string> choice = new List<string> { "water", "fire", "grass" };
-
             int index = random.Next(choice.Count);
+            CpuChoice = choice[index];
 
-            CpuChoice = choice[index];*/
             if(_cpuChoice == "water" && _userChoice == "fire" || _cpuChoice == "fire" && _userChoice == "grass" || _cpuChoice == "grass" && _userChoice == "water")
             {
                 _loss += 1;
