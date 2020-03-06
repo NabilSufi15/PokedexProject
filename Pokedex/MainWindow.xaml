@@ -7,86 +7,96 @@
         xmlns:local="clr-namespace:Pokedex"
         mc:Ignorable="d"
         Title="MainWindow" Height="500" Width="800">
-    <Grid>
-        <StackPanel>
-            <Grid Background="Gray" Height="40">
-                <Grid Margin="5">
-                    <Button HorizontalAlignment="Right"  Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Foreground ="LightGray" Padding="0">
+    <Grid Background="LightGray">
+
+        <StackPanel VerticalAlignment="Top">
+            <Grid Height="33" Background="#FF222222">
+                <Grid>
+                    <Button HorizontalAlignment="Right"  Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Foreground ="Firebrick" Padding="0">
                         <materialDesign:PackIcon Kind="Power"/>
                     </Button>
+                    
+                    <TextBlock Text="Pokedex Project" Foreground="Firebrick" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" FontFamily="Champagne &amp; Limousines" Margin="20 0" FontWeight="Bold"/>
                 </Grid>
             </Grid>
         </StackPanel>
 
-        <Grid Width="250" HorizontalAlignment="Left" Background="#FF524E4E">
-            <ListView Name="List" Margin="0,100,0,92">
-                <ListViewItem Height="60" Foreground="White">
+        <Grid Margin="250 55 0 0">
+            <Grid x:Name="GridPrincipal" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+
+        <Grid Width="250" HorizontalAlignment="Left" Background="#FF222222" Margin="0,33,0,0">
+
+            <materialDesign:TransitioningContent x:Name="TransitionSlideC" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.2}">
+                <Grid x:Name="GridCursor" Margin="0 100 0 0" Width="10" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top"/>
+            </materialDesign:TransitioningContent>
+
+            <ListView Name="SideNavigation" Margin="0,72,0,71" SelectionChanged="SideNavigation_SelectionChanged">
+                
+                <ListViewItem Height="60" >
                     <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="Pokeball" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Pokedex" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                        <materialDesign:PackIcon Kind="Home" Foreground="Firebrick" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <TextBlock Text="Home" Foreground="Firebrick" FontWeight="Bold" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Height="60" Foreground="White">
+                
+                <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="Create" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Create Pokemon" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                        <materialDesign:PackIcon Kind="Pokeball" Foreground="Firebrick" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <TextBlock Text="Pokedex" Foreground="Firebrick" FontWeight="Bold" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
+
                 <ListViewItem Height="60" Foreground="White">
                     <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="Search" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Search Pokemon" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                        <materialDesign:PackIcon Kind="Create" Foreground="Firebrick" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <TextBlock Text="Create Pokemon" Foreground="Firebrick" FontWeight="Bold" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
+
+
                 <ListViewItem Height="60" Foreground="White">
                     <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="GamepadCircle" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Mini Game" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                        <materialDesign:PackIcon Kind="GamepadCircle" Foreground="Firebrick" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <TextBlock Text="Mini Game" FontSize="17" Foreground="Firebrick" FontWeight="Bold" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
             </ListView>
 
-            <ListBox x:Name="ListBoxPokemon" Background="LightBlue" Grid.Column="0" SelectionChanged="ListBoxPokemon_SelectionChanged" Margin="250,40,-251,0"/>
+            <!--
+            <ListBox x:Name="ListBoxPokemon" Background="LightBlue" Grid.Column="0" SelectionChanged="ListBoxPokemon_SelectionChanged" Margin="285,72,-293,28" RenderTransformOrigin="0.586,0.489"/>
+            -->
+            
         </Grid>
-
+<!--
         <Grid Margin="600,51,10,0" Background="#44444444" Height="164" VerticalAlignment="Top">
             <StackPanel Orientation = "Horizontal">
                 <Image Name="pkImage" Width = "200" VerticalAlignment = "Top" Margin = "30"/>
             </StackPanel>
         </Grid>
+        -->
 
-        <!--<ListBox x:Name="ListBoxPokemon" Background="LightBlue" Grid.Column="0" SelectionChanged="ListBoxPokemon_SelectionChanged" Margin="245,51,200,0"/> -->
-
+        <!--
         <Button Content="Create" Margin="32,404,599,48" Click="Create_Click"></Button>
-        <Button Content="Search" Margin="88,351,612,101" Click="Search_Click"></Button>
+        <Button Content="Search" Margin="88,351,612,101" Click="Search_Click"></Button> -->
 
-        <Grid Background="pink" Margin="600,215,10,45">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="40" />
-                <RowDefinition Height="40" />
-                <RowDefinition Height="40" />
-                <RowDefinition Height="40" />
-                <RowDefinition Height="40" />
-                <RowDefinition Height="40" />
-            </Grid.RowDefinitions>
-
-            <Grid.ColumnDefinitions>
-            </Grid.ColumnDefinitions>
-
-            <Label x:Name="LabelId" Grid.Row="0" Grid.Column="0" Background="Bisque" Grid.ColumnSpan="3" Margin="0,0,167,0" >Id</Label>
-            <Label x:Name="LabelName" Grid.Row="1" Grid.Column="0" Background="Bisque" Grid.ColumnSpan="3" Margin="0,0,167,0">Name</Label>
-            <Label x:Name="LabelType" Grid.Row="2" Grid.Column="0" Background="Bisque" Grid.ColumnSpan="3" Margin="0,0,167,0">Type</Label>
-            <Label x:Name="LabelDescription" Grid.Row="3" Grid.Column="0" Background="Bisque" Grid.ColumnSpan="3" Margin="0,0,167,0">Description</Label>
-            <Label x:Name="LabelHeight" Grid.Row="4" Grid.Column="0" Background="Bisque" Grid.ColumnSpan="3" Margin="0,0,167,0">Height</Label>
-            <Label x:Name="LabelWeight" Grid.Row="5" Grid.Column="0" Background="Bisque" Grid.ColumnSpan="3" Margin="0,0,167,0">Weight</Label>
-
+        
+        
+<!--
             <TextBox x:Name="TextId" Grid.Row="0" Grid.Column="2" Background="LightGreen" IsEnabled="False" IsReadOnlyCaretVisible="True"></TextBox>
             <TextBox x:Name="TextName" Grid.Row="1" Grid.Column="2" Background="LightGreen"></TextBox>
-            <TextBox x:Name="TextType" Grid.Row="2" Grid.Column="2" Background="LightGreen"></TextBox>
+            <TextBox x:Name="TextType" rid.Row="2" Grid.Column="2" Background="LightGreen"></TextBox>
             <TextBox x:Name="TextDescription" Grid.Row="3" Grid.Column="2" Background="LightGreen"></TextBox>
             <TextBox x:Name="TextHeight" Grid.Row="4" Grid.Column="2" Background="LightGreen"></TextBox>
             <TextBox x:Name="TextWeight" Grid.Row="5" Background="LightGreen" Margin="0,0,0,10"/>
-        </Grid>
+            -->
+
+
+        
+        <!--<StackPanel>
+            <TextBox x:Name="SearchBar" Foreground="Black" Visibility="Hidden" materialDesign:HintAssist.Hint="Search" Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" TextChanged="SearchBar_TextChanged" Margin="250,38,292,387" />
+        </StackPanel> -->
 
     </Grid>
+
 </Window>

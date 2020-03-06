@@ -16,13 +16,14 @@ namespace Pokedex
         }
 
         public virtual DbSet<Pokemon> Pokemon { get; set; }
+        public virtual DbSet<Stats> Stats { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Data Source=localhost;Initial Catalog = Pokedex; Persist Security Info = True; User ID = SA; Password = Passw0rd2018");
+                optionsBuilder.UseSqlServer("Data Source = localhost; Initial Catalog = Pokedex; Persist Security Info = True; User ID = SA; Password = Passw0rd2018");
             }
         }
 
@@ -40,6 +41,11 @@ namespace Pokedex
                     .HasMaxLength(10)
                     .IsUnicode(false);
 
+                entity.Property(e => e.Pimage)
+                    .HasColumnName("PImage")
+                    .HasMaxLength(150)
+                    .IsUnicode(false);
+
                 entity.Property(e => e.Pname)
                     .HasColumnName("PName")
                     .HasMaxLength(20)
@@ -54,6 +60,20 @@ namespace Pokedex
                     .HasColumnName("PWeight")
                     .HasMaxLength(10)
                     .IsUnicode(false);
+
+                entity.Property(e => e.StatsId).HasColumnName("StatsID");
+
+                entity.HasOne(d => d.Stats)
+                    .WithMany(p => p.Pokemon)
+                    .HasForeignKey(d => d.StatsId)
+                    .HasConstraintName("FK__Pokemon__StatsID__46E78A0C");
+            });
+
+            modelBuilder.Entity<Stats>(entity =>
+            {
+                entity.Property(e => e.StatsId).HasColumnName("StatsID");
+
+                entity.Property(e => e.Hp).HasColumnName("HP");
             });
 
             OnModelCreatingPartial(modelBuilder);

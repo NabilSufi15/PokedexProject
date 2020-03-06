@@ -10,6 +10,12 @@
     <Compile Update="Create.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="HomeUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PokedexUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="PokedexWPF.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -21,7 +27,13 @@
     <Page Update="Create.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="HomeUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PokedexUC.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="PokedexWPF.xaml">

@@ -27,12 +27,13 @@ namespace Pokedex
         public MainWindow()
         {
             InitializeComponent();
-            PopulateListBox();
+            //PopulateListBox();
         }
 
+        /*
         public void PopulatePokemonFields()
         {
-
+            
             if (_selectedPokemon != null)
             {
                 TextId.Text = $"{_selectedPokemon.PokemonId}";
@@ -44,16 +45,19 @@ namespace Pokedex
                 TextHeight.Text = _selectedPokemon.Pheight;
                 TextWeight.Text = _selectedPokemon.Pweight;
             }
-        }
+            
+        } */
 
+            /*
         public void PopulateListBox()
         {
             using (var db = new PokedexContext())
             {
                 ListBoxPokemon.ItemsSource = db.Pokemon.ToList();
             }
-        }
+        }*/
 
+        /*
         private void ListBoxPokemon_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (ListBoxPokemon.SelectedItem != null)
@@ -63,7 +67,64 @@ namespace Pokedex
             }
             
         }
+        */
 
+        /*
+        private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            using (var db = new PokedexContext())
+            {
+                var query =
+                    from pName in db.Pokemon
+                    select pName;
+
+                if (!string.IsNullOrEmpty(SearchBar.Text))
+                {
+                    query = query.Where(e => e.Pname.StartsWith(SearchBar.Text));
+                    ListBoxPokemon.ItemsSource = query.ToList();
+                }
+                else
+                {
+                    ListBoxPokemon.ItemsSource = null;
+                }
+
+            }
+
+        }
+        */
+
+        
+        private void SideNavigation_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            int index = SideNavigation.SelectedIndex;
+            MoveCursorMenu(index);
+
+        }
+
+        private void MoveCursorMenu(int index)
+        {
+            TransitionSlideC.OnApplyTemplate();
+            GridCursor.Margin = new Thickness(0, (100 + (60 * index)), 0, 0);
+
+            switch (index)
+
+            {
+
+                case 0:
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new HomeUC());
+                    break;
+
+                case 1:
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new PokedexUC());
+                    break;
+                default:
+                    break;
+
+            }
+        }
+        
         private void Create_Click(object sender, RoutedEventArgs e)
         {
             Create p = new Create();
@@ -75,5 +136,7 @@ namespace Pokedex
             Search s = new Search();
             s.Show();
         }
+
+        
     }
 }

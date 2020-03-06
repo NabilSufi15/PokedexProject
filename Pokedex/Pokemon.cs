@@ -12,6 +12,9 @@ namespace Pokedex
         public string Pheight { get; set; }
         public string Pweight { get; set; }
         public string Pimage { get; set; }
+        public int? StatsId { get; set; }
+
+        public virtual Stats Stats { get; set; }
 
         public override string ToString()
         {

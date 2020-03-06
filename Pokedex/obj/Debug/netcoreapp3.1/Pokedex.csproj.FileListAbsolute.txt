@@ -108,3 +108,7 @@ C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\obj\Debug\netcoreapp3.
 C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\obj\Debug\netcoreapp3.1\Pokedex.csproj.CopyComplete
 C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\obj\Debug\netcoreapp3.1\Pokedex.dll
 C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\obj\Debug\netcoreapp3.1\Pokedex.pdb
+C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\obj\Debug\netcoreapp3.1\HomeUC.g.cs
+C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\obj\Debug\netcoreapp3.1\HomeUC.baml
+C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\obj\Debug\netcoreapp3.1\PokedexUC.g.cs
+C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\obj\Debug\netcoreapp3.1\PokedexUC.baml
