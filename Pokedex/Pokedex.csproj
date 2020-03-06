@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <None Remove="Background.jpg" />
+    <None Remove="Blastoise.png" />
     <None Remove="Bulbasaur.png" />
   </ItemGroup>
 
@@ -28,6 +29,7 @@
 
   <ItemGroup>
     <Resource Include="Background.jpg" />
+    <Resource Include="Blastoise.png" />
     <Resource Include="Bulbasaur.png" />
   </ItemGroup>
 

@@ -114,3 +114,5 @@ C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\obj\Debug\netcoreapp3.
 C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\obj\Debug\netcoreapp3.1\PokedexUC.baml
 C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\obj\Debug\netcoreapp3.1\CreatePokemonUC.g.cs
 C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\obj\Debug\netcoreapp3.1\CreatePokemonUC.baml
+C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\obj\Debug\netcoreapp3.1\MiniGameUC.g.cs
+C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\obj\Debug\netcoreapp3.1\MiniGameUC.baml

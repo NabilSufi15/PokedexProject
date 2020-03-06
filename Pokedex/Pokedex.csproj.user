@@ -16,6 +16,9 @@
     <Compile Update="HomeUC.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="MiniGameUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="PokedexUC.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -37,6 +40,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MiniGameUC.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="PokedexUC.xaml">

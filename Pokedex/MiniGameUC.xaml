@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="Pokedex.MiniGameUC"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Pokedex"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Button Content="WATER" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="41,269,0,0" VerticalAlignment="Top" Click="Button_Water"/>
+        <Button Content="FIRE" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="42,324,0,0" VerticalAlignment="Top" Click="Button_Fire"/>
+        <Button Content="GRASS" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="42,380,0,0" VerticalAlignment="Top" Click="Button_Grass"/>
+
+        <Image x:Name="water1" Height="200" Width="150" Visibility="Visible" Source="C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\Asset/Blastoise.png" Margin="41,85,612,200"/>
+        <Image x:Name="grass1" Height="200" Width="150" Visibility="Hidden" Source="C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\Asset/Venasaur.png" Margin="41,85,612,200"/>
+        <Image x:Name="fire1" Height="200" Width="150" Visibility="Hidden" Source="C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\Asset/Charizard.png" Margin="41,85,612,200"/>
+
+        <Image x:Name="water2" Height="200" Width="150" Visibility="Visible" Source="C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\Asset/Blastoise.png" Margin="396,85,257,200"/>
+        <Image x:Name="grass2" Height="200" Width="150" Visibility="Hidden" Source="C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\Asset/Venasaur.png" Margin="396,85,257,200"/>
+        <Image x:Name="fire2" Height="200" Width="150" Visibility="Hidden" Source="C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\Asset/Charizard.png" Margin="396,85,257,200"/>
+
+        <Label Content="WINS" HorizontalAlignment="Left" Margin="415,316,0,0" VerticalAlignment="Top" Width="44"/>
+        <Label Content="LOSS" HorizontalAlignment="Left" Margin="415,353,0,0" VerticalAlignment="Top" Width="44"/>
+        <Label Content="TIES" HorizontalAlignment="Left" Margin="415,384,0,0" VerticalAlignment="Top" Width="44"/>
+        <TextBox Name="DrawText" HorizontalAlignment="Left" Margin="488,384,0,0" VerticalAlignment="Top" Width="44"/>
+        <TextBox Name="LossText" HorizontalAlignment="Left" Margin="488,350,0,0" VerticalAlignment="Top" Width="44"/>
+        <TextBox Name="WinsText" HorizontalAlignment="Left" Margin="488,316,0,0" VerticalAlignment="Top" Width="44"/>
+        <Label Content="Label7" HorizontalAlignment="Left" Margin="415,273,0,0" VerticalAlignment="Top" Width="44"/>
+
+
+
+    </Grid>
+</UserControl>

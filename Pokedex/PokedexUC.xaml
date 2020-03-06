@@ -12,7 +12,7 @@
             <Grid>
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                     <StackPanel>
-                        <TextBox x:Name="SearchBar" Height="26" Width="74" Foreground="Black" Visibility="Visible" materialDesign:HintAssist.Hint="Search"  TextChanged="SearchBar_TextChanged"/>
+                        <TextBox x:Name="SearchBar" Height="26" Width="192" Foreground="Black" Visibility="Visible" materialDesign:HintAssist.Hint="Search"  TextChanged="SearchBar_TextChanged"/>
                         <ListBox x:Name="ListBoxPokemon" Background="LightBlue" SelectionChanged="ListBoxPokemon_SelectionChanged" Height="189" Width="192"/>
                     </StackPanel>
 

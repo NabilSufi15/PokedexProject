@@ -21,7 +21,6 @@ namespace Pokedex
     /// </summary>
     public partial class MainWindow : Window
     {
-        private Pokemon _selectedPokemon;
 
         Program pd = new Program();
         public MainWindow()
@@ -122,6 +121,10 @@ namespace Pokedex
                 case 2:
                     GridPrincipal.Children.Clear();
                     GridPrincipal.Children.Add(new CreatePokemonUC());
+                    break;
+                case 3:
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new MiniGameUC());
                     break;
                 default:
                     break;
