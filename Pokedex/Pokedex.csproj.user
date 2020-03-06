@@ -10,6 +10,9 @@
     <Compile Update="Create.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="CreatePokemonUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="HomeUC.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -25,6 +28,9 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="Create.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CreatePokemonUC.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="HomeUC.xaml">

@@ -10,38 +10,26 @@
     <Grid>
         <materialDesign:TransitioningContent x:Name="TransitionSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
             <Grid>
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <StackPanel>
+                        <TextBox x:Name="SearchBar" Height="26" Width="74" Foreground="Black" Visibility="Visible" materialDesign:HintAssist.Hint="Search"  TextChanged="SearchBar_TextChanged"/>
+                        <ListBox x:Name="ListBoxPokemon" Background="LightBlue" SelectionChanged="ListBoxPokemon_SelectionChanged" Height="189" Width="192"/>
+                    </StackPanel>
 
-
-
-
-                <ListBox x:Name="ListBoxPokemon" Background="LightBlue" SelectionChanged="ListBoxPokemon_SelectionChanged" Margin="10,74,424,10"/>
-
-                <Image x:Name="pkImage" Width = "170" Height="90" Margin="397,66,233,294"/>
-                <TextBlock x:Name="TextId" HorizontalAlignment="Left" Margin="400,195,0,0" Text="Text" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="52"/>
-                <TextBlock x:Name="TextName" HorizontalAlignment="Left" Margin="430,288,0,0" Text="Text" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="52"/>
-                <TextBlock x:Name="TextType" HorizontalAlignment="Left" Margin="482,186,0,0" Text="Text" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="52"/>
-                <TextBlock x:Name="TextDescription" HorizontalAlignment="Left" Margin="404,231,0,0" Text="Text" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="52"/>
-                <TextBlock x:Name="TextHeight" HorizontalAlignment="Left" Margin="456,244,0,0" Text="Text" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="52"/>
-                <TextBlock x:Name="TextWeight" HorizontalAlignment="Left" Margin="461,218,0,0" Text="Text" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="52"/>
-                <TextBox x:Name="SearchBar"  Visibility="Visible" materialDesign:HintAssist.Hint="Search" Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" TextChanged="SearchBar_TextChanged" Margin="85,15,532,376" />
-
-                <!--
-                <StackPanel>
-                    <ListBox x:Name="ListBoxPokemon" Background="LightBlue" Grid.Column="0" SelectionChanged="ListBoxPokemon_SelectionChanged" Margin="176,225,442,10" RenderTransformOrigin="0.586,0.489" Height="209"/>
+                    <StackPanel Width="227">
+                        <Image x:Name="pkImage" Width = "147" Height="73"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock x:Name="TextId" TextAlignment="Center" Text="Text" Height="17" Width="52"/>
+                            <TextBlock x:Name="TextName" TextAlignment="Center" Text="Text" TextWrapping="Wrap" Height="17" Width="52"/>
+                        </StackPanel>
+                        <TextBlock x:Name="TextType" TextAlignment="Center" HorizontalAlignment="Center" Text="Text" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="52"/>
+                        <TextBlock x:Name="TextDescription" TextAlignment="Center" HorizontalAlignment="Center" Text="Text" TextWrapping="Wrap" Height="88" Width="180"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock x:Name="TextHeight" TextAlignment="Center" HorizontalAlignment="Center" Text="Text" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="52"/>
+                            <TextBlock x:Name="TextWeight" TextAlignment="Center" HorizontalAlignment="Center" Text="Text" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="52"/>
+                        </StackPanel>
+                    </StackPanel>
                 </StackPanel>
-
-                <StackPanel Orientation = "Horizontal">
-                    <Image x:Name="pkImage" Width = "170" Height="90"/>
-                </StackPanel>
-
-                <TextBox x:Name="SearchBar" Foreground="Black" Visibility="Visible" materialDesign:HintAssist.Hint="Search" Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" TextChanged="SearchBar_TextChanged" Margin="176,200,443,225" />
-                <TextBlock x:Name="TextId" HorizontalAlignment="Left" Margin="604,268,0,0" Text="Text" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="52"/>
-                <TextBlock x:Name="TextName" HorizontalAlignment="Left" Margin="702,268,0,0" Text="Text" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="52"/>
-                <TextBlock x:Name="TextType" HorizontalAlignment="Left" Margin="604,303,0,0" Text="Text" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="52"/>
-                <TextBlock x:Name="TextDescription" HorizontalAlignment="Left" Margin="689,303,0,0" Text="Text" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="52"/>
-                <TextBlock x:Name="TextHeight" HorizontalAlignment="Left" Margin="604,342,0,0" Text="Text" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="52"/>
-                <TextBlock x:Name="TextWeight" HorizontalAlignment="Left" Margin="702,338,0,0" Text="Text" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="52"/>
--->
             </Grid>
         </materialDesign:TransitioningContent>
     </Grid>
