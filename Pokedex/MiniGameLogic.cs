@@ -6,7 +6,7 @@ using System.Windows.Media;
 
 namespace Pokedex
 {
-    class MiniGameLogic
+    public class MiniGameLogic
     {
         private int _wins = 0;
         private int _draw = 0;
@@ -19,31 +19,60 @@ namespace Pokedex
         public string UserChoice
         {
             get { return _userChoice; }
-            set { _userChoice = value; }
+            set 
+            { if (value == "water" || value == "grass" || value == "fire")
+                {
+                    _userChoice = value;
+                }
+            }
         }
 
         public string CpuChoice
         {
             get { return _cpuChoice; }
-            set { _cpuChoice = value; }
+            set
+            {
+                if (value == "water" || value == "grass" || value == "fire")
+                {
+                    _cpuChoice = value;
+                }
+            }
         }
 
         public int Wins
         {
             get { return _wins; }
-            set { _wins = value;  }
+            set 
+            { 
+                if(value >= 0 && value <= 5)
+                {
+                    _wins = value;
+                }
+            }
         }
 
         public int Draw
         {
             get { return _draw; }
-            set { _draw = value; }
+            set
+            {
+                if (value >= 0)
+                { 
+                    _draw = value;
+                }
+            }
         }
 
         public int Loss
         {
             get { return _loss; }
-            set { _loss = value; }
+            set
+            {
+                if (value >= 0 && value <= 5)
+                {
+                    _loss = value;
+                }
+            }
         }
 
 
@@ -67,6 +96,7 @@ namespace Pokedex
             {
                 _wins += 1;
             }
+
 
             if (_wins >= 5)
             {
