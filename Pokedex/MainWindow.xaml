@@ -32,15 +32,15 @@
             </materialDesign:TransitioningContent>
 
             <ListView Name="SideNavigation" Margin="0,72,0,71" SelectionChanged="SideNavigation_SelectionChanged">
-                
-                <ListViewItem Height="60" >
+
+                <ListViewItem Height="60" Foreground="White">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="Home" Foreground="Firebrick" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock Text="Home" Foreground="Firebrick" FontWeight="Bold" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
-                
-                <ListViewItem Height="60">
+
+                <ListViewItem Height="60" Foreground="White">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="Pokeball" Foreground="Firebrick" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock Text="Pokedex" Foreground="Firebrick" FontWeight="Bold" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>

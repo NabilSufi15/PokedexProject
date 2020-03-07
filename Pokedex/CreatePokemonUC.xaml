@@ -9,34 +9,76 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <materialDesign:TransitioningContent x:Name="TransitionSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
-            <StackPanel Orientation="Vertical" VerticalAlignment="Center">
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Text="Image" Height="18" Width="52"/>
-                    <TextBox x:Name="TextImage" Height="26" Width="200" Foreground="Black" Visibility="Visible" />
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Text="Name" Height="18" Width="52"/>
-                    <TextBox x:Name="TextName" Height="26" Width="200" Foreground="Black" Visibility="Visible"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Text="Type" Height="18" Width="52"/>
-                    <TextBox x:Name="TextType" Height="26" Width="200" Foreground="Black" Visibility="Visible"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Text="Description" Height="18" Width="52"/>
-                    <TextBox x:Name="TextDescription" Height="26" Width="200" Foreground="Black" Visibility="Visible"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Text="Height" Height="18" Width="52"/>
-                    <TextBox x:Name="TextHeight" Height="26" Width="200" Foreground="Black" Visibility="Visible"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Text="Weight" Height="18" Width="52"/>
-                    <TextBox x:Name="TextWeight" Height="26" Width="200" Foreground="Black" Visibility="Visible"/>
+            <Grid>
+                <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="0,0,519,0">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Text="Image" Height="18" Width="52"/>
+                        <TextBox x:Name="TextImage" Height="26" Width="200" Foreground="Black" Visibility="Visible" />
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Text="Name" Height="18" Width="52"/>
+                        <TextBox x:Name="TextName" Height="26" Width="200" Foreground="Black" Visibility="Visible"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Text="Type" Height="18" Width="52"/>
+                        <TextBox x:Name="TextType" Height="26" Width="200" Foreground="Black" Visibility="Visible"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Width="293">
+                        <TextBlock TextAlignment="Center" Text="Description" Height="18" Width="68"/>
+                        <TextBox x:Name="TextDescription" Height="26" Width="200" Foreground="Black" Visibility="Visible"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Text="Height" Height="18" Width="52"/>
+                        <TextBox x:Name="TextHeight" Height="26" Width="200" Foreground="Black" Visibility="Visible"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Text="Weight" Height="18" Width="52"/>
+                        <TextBox x:Name="TextWeight" Height="26" Width="200" Foreground="Black" Visibility="Visible"/>
+                    </StackPanel>
                 </StackPanel>
 
-                <Button Content="Create" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Create_Click"/>
-            </StackPanel>
+                <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="350,0,169,0">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Text="HP" Height="18" Width="52"/>
+                        <TextBox x:Name="TextHP" Height="26" Width="200" Foreground="Black" Visibility="Visible"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Text="Attack" Height="18" Width="52"/>
+                        <TextBox x:Name="TextAttack" Height="26" Width="200" Foreground="Black" Visibility="Visible"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Text="Defense" Height="18" Width="52"/>
+                        <TextBox x:Name="TextDefense" Height="26" Width="200" Foreground="Black" Visibility="Visible"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Text="Sp.Attack" Height="18" Width="52"/>
+                        <TextBox x:Name="SpAttack" Height="26" Width="200" Foreground="Black" Visibility="Visible"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Text="Sp.Defense" Height="18" Width="52"/>
+                        <TextBox x:Name="SpDefense" Height="26" Width="200" Foreground="Black" Visibility="Visible"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Text="Speed" Height="18" Width="52"/>
+                        <TextBox x:Name="TextSpeed" Height="26" Width="200" Foreground="Black" Visibility="Visible" />
+                    </StackPanel>
+
+                </StackPanel>
+
+                <TextBlock x:Name="Pokecreate" Text="Pokemon Created!" Margin="400,357,281,46" Visibility="Hidden"></TextBlock>
+
+                <Button Content="Create" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Create_Click" Margin="262,348,0,0"/>
+            </Grid>
         </materialDesign:TransitioningContent>
     </Grid>
 </UserControl>

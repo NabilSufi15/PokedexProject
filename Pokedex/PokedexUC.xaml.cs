@@ -20,6 +20,9 @@ namespace Pokedex
     public partial class PokedexUC : UserControl
     {
         private Pokemon _selectedPokemon;
+        private Stats _stats;
+        private MediaPlayer _cry = new MediaPlayer();
+        private MediaPlayer _speech = new MediaPlayer();
         public PokedexUC()
         {
             InitializeComponent();
@@ -37,6 +40,7 @@ namespace Pokedex
 
         public void PopulateListBox()
         {
+            
             using (var db = new PokedexContext())
             {
                 ListBoxPokemon.ItemsSource = db.Pokemon.ToList();
@@ -45,6 +49,7 @@ namespace Pokedex
 
         public void PopulatePokemonFields()
         {
+            
 
             if (_selectedPokemon != null)
             {
@@ -56,12 +61,37 @@ namespace Pokedex
                 TextDescription.Text = _selectedPokemon.Pdescription;
                 TextHeight.Text = _selectedPokemon.Pheight;
                 TextWeight.Text = _selectedPokemon.Pweight;
-            }
+                _cry.Open(new Uri(@$"{_selectedPokemon.Pcry}", UriKind.RelativeOrAbsolute));
+                _speech.Open(new Uri(@$"{_selectedPokemon.Psound}", UriKind.RelativeOrAbsolute));
 
+            }
+        }
+
+        public void PopulateStatsFields()
+        {
+            /*
+            if (_stats != null)
+            {
+                HP.Text = $"{_stats.Hp}";
+                HP.Text = "aha";
+                Attack.Text = $"_stats.Attack";
+                Defense.Text = $"_stats.Defense";
+                Spattack.Text = $"_stats.SpAttack";
+                Spdefense.Text = $"_stats.SpDefense";
+                Speed.Text = $"_stats.Speed";
+            }
+            else
+            {
+                HP.Text = "n/a";
+            }
+            */
+            
+            
         }
 
         private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
         {
+            
             using (var db = new PokedexContext())
             {
                 var query =
@@ -79,7 +109,24 @@ namespace Pokedex
                 }
 
             }
+            
 
+        }
+
+        private void Button_Stats(object sender, RoutedEventArgs e)
+        {
+            PokemonStats ps = new PokemonStats();
+            ps.Show();
+        }
+
+        private void Button_Cry(object sender, RoutedEventArgs e)
+        {
+            _cry.Play();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            _speech.Play();
         }
     }
 }

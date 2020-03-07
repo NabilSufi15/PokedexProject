@@ -31,6 +31,11 @@ namespace Pokedex
         {
             modelBuilder.Entity<Pokemon>(entity =>
             {
+                entity.Property(e => e.Pcry)
+                    .HasColumnName("PCry")
+                    .HasMaxLength(150)
+                    .IsUnicode(false);
+
                 entity.Property(e => e.Pdescription)
                     .HasColumnName("PDescription")
                     .HasMaxLength(255)
@@ -51,6 +56,11 @@ namespace Pokedex
                     .HasMaxLength(20)
                     .IsUnicode(false);
 
+                entity.Property(e => e.Psound)
+                    .HasColumnName("PSound")
+                    .HasMaxLength(150)
+                    .IsUnicode(false);
+
                 entity.Property(e => e.Ptype)
                     .HasColumnName("PType")
                     .HasMaxLength(10)
@@ -66,14 +76,37 @@ namespace Pokedex
                 entity.HasOne(d => d.Stats)
                     .WithMany(p => p.Pokemon)
                     .HasForeignKey(d => d.StatsId)
-                    .HasConstraintName("FK__Pokemon__StatsID__46E78A0C");
+                    .HasConstraintName("FK__Pokemon__StatsID__5EBF139D");
             });
 
             modelBuilder.Entity<Stats>(entity =>
             {
                 entity.Property(e => e.StatsId).HasColumnName("StatsID");
 
-                entity.Property(e => e.Hp).HasColumnName("HP");
+                entity.Property(e => e.Attack)
+                    .HasMaxLength(5)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Defense)
+                    .HasMaxLength(5)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Hp)
+                    .HasColumnName("HP")
+                    .HasMaxLength(5)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.SpAttack)
+                    .HasMaxLength(5)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.SpDefense)
+                    .HasMaxLength(5)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Speed)
+                    .HasMaxLength(5)
+                    .IsUnicode(false);
             });
 
             OnModelCreatingPartial(modelBuilder);

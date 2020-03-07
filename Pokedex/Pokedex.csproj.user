@@ -7,9 +7,6 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Create.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="CreatePokemonUC.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -25,14 +22,11 @@
     <Compile Update="PokedexWPF.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Search.xaml.cs">
+    <Compile Update="PokemonStats.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Create.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="CreatePokemonUC.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -51,7 +45,7 @@
     <Page Update="PokedexWPF.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Search.xaml">
+    <Page Update="PokemonStats.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

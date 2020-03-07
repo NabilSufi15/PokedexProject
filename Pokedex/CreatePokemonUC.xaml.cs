@@ -25,6 +25,8 @@ namespace Pokedex
 
         private void Create_Click(object sender, RoutedEventArgs e)
         {
+            Pokecreate.Visibility = Visibility.Visible;
+
             using (var db = new PokedexContext())
             {
                 Pokemon newPokemon = new Pokemon()
@@ -37,11 +39,24 @@ namespace Pokedex
                     Pweight = TextWeight.Text
                 };
 
+                Stats newStats = new Stats()
+                {
+                    Hp = TextHP.Text,
+                    Attack = TextAttack.Text,
+                    Defense = TextType.Text,
+                    SpAttack = TextDescription.Text,
+                    SpDefense = TextHeight.Text,
+                    Speed = TextWeight.Text
+                };
+
                 //add to database
                 db.Add(newPokemon);
+                //add to database
+                db.Add(newStats);
                 // write changes to database
                 db.SaveChanges();
             }
+            
         }
     }
 }

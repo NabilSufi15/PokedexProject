@@ -11,12 +11,12 @@ namespace Pokedex
         }
 
         public int StatsId { get; set; }
-        public int? Hp { get; set; }
-        public int? Attack { get; set; }
-        public int? Defence { get; set; }
-        public int? SpAttack { get; set; }
-        public int? SpDefense { get; set; }
-        public int? Speed { get; set; }
+        public string Hp { get; set; }
+        public string Attack { get; set; }
+        public string Defense { get; set; }
+        public string SpAttack { get; set; }
+        public string SpDefense { get; set; }
+        public string Speed { get; set; }
 
         public virtual ICollection<Pokemon> Pokemon { get; set; }
     }

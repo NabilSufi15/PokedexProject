@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Documents;
+using System.Windows.Media;
 
 namespace Pokedex
 {
@@ -12,8 +13,9 @@ namespace Pokedex
         private int _loss = 0;
         private string _userChoice;
         private string _cpuChoice;
+        private MediaPlayer _music = new MediaPlayer();
 
-        
+
         public string UserChoice
         {
             get { return _userChoice; }
@@ -65,6 +67,41 @@ namespace Pokedex
             {
                 _wins += 1;
             }
+
+            if (_wins >= 5)
+            {
+                _wins = 0;
+                _loss = 0;
+                _draw = 0;
+            }
+            else if (_loss >= 5)
+            {
+                _wins = 0;
+                _loss = 0;
+                _draw = 0;
+            }
+        }
+
+        public void WinGame()
+        {
+            if(_wins >= 5)
+            {
+                _wins = 0;
+                _loss = 0;
+                _draw = 0;
+            }
+            else if(_loss >= 5)
+            {
+                _wins = 0;
+                _loss = 0;
+                _draw = 0;
+            }
+        }
+
+        public void audio()
+        {
+            _music.Open(new Uri(@"C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\Asset\Audio/BattleMusic.mp3", UriKind.RelativeOrAbsolute));
+            _music.Play();
         }
 
     }

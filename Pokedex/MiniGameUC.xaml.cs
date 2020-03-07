@@ -22,6 +22,7 @@ namespace Pokedex
         public MiniGameUC()
         {
             InitializeComponent();
+            game.audio();
         }
 
         private void Button_Water(object sender, RoutedEventArgs e)
