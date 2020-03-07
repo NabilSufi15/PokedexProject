@@ -8,10 +8,13 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
+        <!-- Home Screen -->
         <materialDesign:TransitioningContent x:Name="TransitionSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
+            
             <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
                 <Image Width="394" Height="239" Source="C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\Asset\Images/Background.png" Stretch="UniformToFill"/>
             </StackPanel>
+            
         </materialDesign:TransitioningContent>
     </Grid>
 </UserControl>

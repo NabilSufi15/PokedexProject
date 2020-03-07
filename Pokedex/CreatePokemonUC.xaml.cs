@@ -23,8 +23,10 @@ namespace Pokedex
             InitializeComponent();
         }
 
+        //saves the data within the respective tables and columns
         private void Create_Click(object sender, RoutedEventArgs e)
         {
+            //Pokecreate textblock element becomes visible
             Pokecreate.Visibility = Visibility.Visible;
 
             using (var db = new PokedexContext())
@@ -36,7 +38,9 @@ namespace Pokedex
                     Ptype = TextType.Text,
                     Pdescription = TextDescription.Text,
                     Pheight = TextHeight.Text,
-                    Pweight = TextWeight.Text
+                    Pweight = TextWeight.Text,
+                    Pcry = TextCry.Text,
+                    Psound = TextSound.Text
                 };
 
                 Stats newStats = new Stats()
@@ -44,9 +48,9 @@ namespace Pokedex
                     Hp = TextHP.Text,
                     Attack = TextAttack.Text,
                     Defense = TextType.Text,
-                    SpAttack = TextDescription.Text,
-                    SpDefense = TextHeight.Text,
-                    Speed = TextWeight.Text
+                    SpAttack = TextSpAttack.Text,
+                    SpDefense = TextSpDefense.Text,
+                    Speed = TextSpeed.Text
                 };
 
                 //add to database

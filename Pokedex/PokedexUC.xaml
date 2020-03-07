@@ -10,44 +10,59 @@
     <Grid>
         <materialDesign:TransitioningContent x:Name="TransitionSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
             <Grid>
+                <!-- Lists of pokemon and search bar-->
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="39,0,568,0">
                     <StackPanel Height="292">
                         <TextBox x:Name="SearchBar" Height="26" Width="192" Foreground="Firebrick" Background="#FF222222" Visibility="Visible" materialDesign:HintAssist.Hint="Search" FontWeight="Bold"  TextChanged="SearchBar_TextChanged"/>
                         <ListBox x:Name="ListBoxPokemon" Background="#FF222222" Foreground="Firebrick" SelectionChanged="ListBoxPokemon_SelectionChanged" FontWeight="Bold"  Height="265" Width="192"/>
                     </StackPanel>
                 </StackPanel>
+                
+                <!-- Pokemon Information-->
                 <StackPanel Background="#FF222222" Margin="352,39,201,85">
+                    <!--Pokemon Image-->
                     <Image x:Name="pkImage" Width = "147" Height="73"/>
+
+                    <!-- Pokemon index number -->
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                         <materialDesign:PackIcon Kind="Hashtag" Foreground="Firebrick" Width="15" Height="15" VerticalAlignment="Center"/>
                         <TextBlock x:Name="TextId" Foreground="Firebrick" FontWeight="Bold" TextAlignment="Center" Text="Entry" Height="17" Width="52"/>
                     </StackPanel>
+
+                    <!-- Pokemon Name-->
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                         <materialDesign:PackIcon Kind="Abc" Foreground="Firebrick" Width="15" Height="15"/>
                         <TextBlock x:Name="TextName" Foreground="Firebrick" FontWeight="Bold" TextAlignment="Center" Text="Name" TextWrapping="Wrap" Height="17" Width="106"/>
                     </StackPanel>
+
+                    <!-- Pokemon Type -->
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                         <materialDesign:PackIcon Kind="LetterT" Foreground="Firebrick" Width="15" Height="15" VerticalAlignment="Center"/>
                         <TextBlock x:Name="TextType" Foreground="Firebrick" FontWeight="Bold" TextAlignment="Center" HorizontalAlignment="Center" Text="Type" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="52"/>
                     </StackPanel>
+
+                    <!-- Pokemon Description -->
                     <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
                         <materialDesign:PackIcon Kind="BookOpen" Foreground="Firebrick" Width="15" Height="15" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         <TextBlock x:Name="TextDescription" Foreground="Firebrick" FontWeight="Bold" TextAlignment="Center" HorizontalAlignment="Center" Text="Description" TextWrapping="Wrap" Height="88" Width="180"/>
                     </StackPanel>
 
+                    <!-- Pokemon Height and Weight-->
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                             <materialDesign:PackIcon Kind="HumanMaleHeight" Foreground="Firebrick" FontWeight="Bold" Width="15" Height="15" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             <TextBlock x:Name="TextHeight" Foreground="Firebrick" FontWeight="Bold" TextAlignment="Center" HorizontalAlignment="Center" Text="Height" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="52"/>
                         </StackPanel>
+                        
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                             <materialDesign:PackIcon Kind="Weight" Foreground="Firebrick" Width="15" Height="15" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             <TextBlock x:Name="TextWeight" Foreground="Firebrick" FontWeight="Bold" TextAlignment="Center" HorizontalAlignment="Center" Text="Weight" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="52"/>
                         </StackPanel>
                     </StackPanel>
 
+                    <!-- Description sound and pokemon cry buttons-->
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                        <Button Background="#FF222222" Foreground="Firebrick" Width="49" Height="37" BorderBrush="{x:Null}" Click="Button_Click">
+                        <Button Background="#FF222222" Foreground="Firebrick" Width="49" Height="37" BorderBrush="{x:Null}" Click="Button_Speech">
                             <materialDesign:PackIcon Kind="Speak"/>
                         </Button>
                         <Button Background="#FF222222" Foreground="Firebrick" Width="49" Height="37" BorderBrush="{x:Null}" Click="Button_Cry">
@@ -56,6 +71,7 @@
                     </StackPanel>
                 </StackPanel>
 
+                <!-- shows stats button -->
                 <Button Content="Stats" Background="#F2222222" Foreground="Firebrick" BorderBrush="{x:Null}" HorizontalAlignment="Left" Margin="273,349,0,0" VerticalAlignment="Top" Click="Button_Stats"/>
             </Grid>
         </materialDesign:TransitioningContent>

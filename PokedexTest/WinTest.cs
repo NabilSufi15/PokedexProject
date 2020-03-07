@@ -13,6 +13,7 @@ namespace PokedexTest
             _logic = new MiniGameLogic();
         }
 
+        // test if wins is between 0 and 5
         [TestCase(0)]
         [TestCase(1)]
         [TestCase(2)]
@@ -26,6 +27,7 @@ namespace PokedexTest
             Assert.AreEqual(newWins, _logic.Wins);
         }
 
+        //test if wins go outside the scope of 0 and 5
         [TestCase(-1)]
         [TestCase(6)]
         [Test]

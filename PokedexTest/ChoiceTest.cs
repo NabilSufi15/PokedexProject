@@ -13,6 +13,7 @@ namespace PokedexTest
             _logic = new MiniGameLogic();
         }
 
+        //test if cpu choice is valid
         [TestCase("water")]
         [TestCase("fire")]
         [TestCase("grass")]
@@ -23,6 +24,7 @@ namespace PokedexTest
             Assert.AreEqual(newChoice, _logic.CpuChoice);
         }
 
+        //test if user choice is valid
         [TestCase("water")]
         [TestCase("fire")]
         [TestCase("grass")]

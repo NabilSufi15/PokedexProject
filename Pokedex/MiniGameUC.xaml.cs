@@ -25,6 +25,7 @@ namespace Pokedex
             game.audio();
         }
 
+        //makes water pokemon visible when water button is clicked
         private void Button_Water(object sender, RoutedEventArgs e)
         {
             game.UserChoice = "water";
@@ -40,6 +41,7 @@ namespace Pokedex
             LossText.Text = $"{game.Loss}";
         }
 
+        //makes fire pokemon visible when fire button is clicked
         private void Button_Fire(object sender, RoutedEventArgs e)
         {
             game.UserChoice = "fire";
@@ -55,6 +57,7 @@ namespace Pokedex
             LossText.Text = $"{game.Loss}";
         }
 
+        //makes grass pokemon visible when grass button is clicked
         private void Button_Grass(object sender, RoutedEventArgs e)
         {
             game.UserChoice = "grass";
@@ -70,6 +73,7 @@ namespace Pokedex
             LossText.Text = $"{game.Loss}";
         }
 
+        //Shows cpu pokemon when choice is made
         private void ShowImage()
         {
             if (game.CpuChoice == "water")

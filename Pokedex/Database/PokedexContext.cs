@@ -76,7 +76,7 @@ namespace Pokedex
                 entity.HasOne(d => d.Stats)
                     .WithMany(p => p.Pokemon)
                     .HasForeignKey(d => d.StatsId)
-                    .HasConstraintName("FK__Pokemon__StatsID__5EBF139D");
+                    .HasConstraintName("FK__Pokemon__StatsID__6383C8BA");
             });
 
             modelBuilder.Entity<Stats>(entity =>

@@ -8,31 +8,42 @@
         mc:Ignorable="d"
         Title="PokemonStats" Height="350" Width="250">
     <Grid Background="Black">
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,11,292" >
+        <!-- Displays Pokemon HP Level-->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,0,11,292" >
             <materialDesign:PackIcon Kind="HealthPotion" Foreground="Firebrick" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
             <TextBlock Text="HP" Foreground="Firebrick" FontWeight="Bold" FontSize="17" VerticalAlignment="Center" Margin="40 0"/>
             <TextBlock Name="HP" Text="Health" Foreground="Firebrick" FontWeight="Bold" FontSize="17" VerticalAlignment="Center" Margin="20 0"></TextBlock>
         </StackPanel>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,42,11,248">
+        
+        <!-- Displays Pokemon Attack Level-->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,42,11,248">
             <materialDesign:PackIcon Kind="Sword" Foreground="Firebrick" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
             <TextBlock Text="ATTACK" Foreground="Firebrick" FontWeight="Bold" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
             <TextBlock Name="Attack" Text="Health" Foreground="Firebrick" FontWeight="Bold" FontSize="17" VerticalAlignment="Center" Margin="20 0"></TextBlock>
         </StackPanel>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="1,86,10,204">
+
+        <!-- Displays Pokemon Defense Level-->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="1,86,10,204">
             <materialDesign:PackIcon Kind="Shield" Foreground="Firebrick" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
             <TextBlock Text="DEFENSE" Foreground="Firebrick" FontWeight="Bold" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
             <TextBlock Name="Defense" Text="Defense" Foreground="Firebrick" FontWeight="Bold" FontSize="17" VerticalAlignment="Center" Margin="10 0"></TextBlock>
         </StackPanel>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="1,130,10,160">
+
+        <!-- Displays Pokemon SP.Attack Level-->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="1,130,10,160">
             <materialDesign:PackIcon Kind="Magic" Foreground="Firebrick" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
             <TextBlock Text="SP.ATTACK" Foreground="Firebrick" FontWeight="Bold" FontSize="17" VerticalAlignment="Center" Margin="13 0"/>
             <TextBlock Name="Spattack" Text="Defense" Foreground="Firebrick" FontWeight="Bold" FontSize="17" VerticalAlignment="Center" Margin="13 0"></TextBlock>
         </StackPanel>
+
+        <!-- Displays Pokemon SP.DEFENSE Level-->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="3,174,0,116">
             <materialDesign:PackIcon Kind="Magic" Foreground="Firebrick" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
             <TextBlock Text="SP.DEFENSE" Foreground="Firebrick" FontWeight="Bold" FontSize="17" VerticalAlignment="Center" Margin="13 0"/>
             <TextBlock Name="Spdefense" Text="Defense" Foreground="Firebrick" FontWeight="Bold" FontSize="17" VerticalAlignment="Center" Margin="2 0"></TextBlock>
         </StackPanel>
+
+        <!-- Displays Pokemon Speed Level-->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="3,218,0,72" Width="247">
             <materialDesign:PackIcon Kind="Magic" Foreground="Firebrick" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
             <TextBlock Text="SPEED" Foreground="Firebrick" FontWeight="Bold" FontSize="17" VerticalAlignment="Center" Margin="13 0"/>

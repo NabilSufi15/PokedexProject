@@ -29,6 +29,8 @@ namespace Pokedex
             PopulateListBox();
         }
 
+
+        //Displays pokemon information when selected from the list
         private void ListBoxPokemon_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (ListBoxPokemon.SelectedItem != null)
@@ -38,6 +40,7 @@ namespace Pokedex
             }
         }
 
+        //Populates the listbox from the database table pokemon
         public void PopulateListBox()
         {
             
@@ -47,10 +50,9 @@ namespace Pokedex
             }
         }
 
+        //Populates pokemon information
         public void PopulatePokemonFields()
         {
-            
-
             if (_selectedPokemon != null)
             {
                 TextId.Text = $"{_selectedPokemon.PokemonId}";
@@ -89,6 +91,7 @@ namespace Pokedex
             
         }
 
+        // search pokemon name comparing the search bar text to pname column of pokemon table
         private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
         {
             
@@ -113,18 +116,21 @@ namespace Pokedex
 
         }
 
+        //opens PokemonStats window
         private void Button_Stats(object sender, RoutedEventArgs e)
         {
             PokemonStats ps = new PokemonStats();
             ps.Show();
         }
 
+        //Plays the pokemon cry sound
         private void Button_Cry(object sender, RoutedEventArgs e)
         {
             _cry.Play();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        //Plays the the voice description of pokemon
+        private void Button_Speech(object sender, RoutedEventArgs e)
         {
             _speech.Play();
         }

@@ -19,9 +19,6 @@
     <Compile Update="PokedexUC.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="PokedexWPF.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="PokemonStats.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -40,9 +37,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="PokedexUC.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="PokedexWPF.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="PokemonStats.xaml">

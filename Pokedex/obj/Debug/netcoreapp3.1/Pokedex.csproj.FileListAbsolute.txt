@@ -91,13 +91,11 @@ C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\bin\Debug\netcoreapp3.
 C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\obj\Debug\netcoreapp3.1\Pokedex.csprojAssemblyReference.cache
 C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\obj\Debug\netcoreapp3.1\MainWindow.g.cs
-C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\obj\Debug\netcoreapp3.1\PokedexWPF.g.cs
 C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\obj\Debug\netcoreapp3.1\App.g.cs
 C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\obj\Debug\netcoreapp3.1\Pokedex_MarkupCompile.cache
 C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\obj\Debug\netcoreapp3.1\Pokedex_MarkupCompile.lref
 C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\obj\Debug\netcoreapp3.1\App.baml
 C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\obj\Debug\netcoreapp3.1\MainWindow.baml
-C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\obj\Debug\netcoreapp3.1\PokedexWPF.baml
 C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\obj\Debug\netcoreapp3.1\Pokedex.g.resources
 C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\obj\Debug\netcoreapp3.1\Pokedex.AssemblyInfoInputs.cache
 C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\obj\Debug\netcoreapp3.1\Pokedex.AssemblyInfo.cs

@@ -13,6 +13,7 @@ namespace PokedexTest
             _logic = new MiniGameLogic();
         }
 
+        //test if loss is between 0 and 5
         [TestCase(0)]
         [TestCase(1)]
         [TestCase(2)]
@@ -26,6 +27,7 @@ namespace PokedexTest
             Assert.AreEqual(newLoss, _logic.Loss);
         }
 
+        //test if loss goes out of scope of 0 and 5
         [TestCase(-1)]
         [TestCase(6)]
         [Test]

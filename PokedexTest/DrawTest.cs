@@ -13,6 +13,7 @@ namespace PokedexTest
             _logic = new MiniGameLogic();
         }
 
+        //test if draw is valid
         [TestCase(0)]
         [TestCase(2)]
         [TestCase(6)]

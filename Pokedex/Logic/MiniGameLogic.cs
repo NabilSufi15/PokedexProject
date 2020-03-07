@@ -16,6 +16,7 @@ namespace Pokedex
         private MediaPlayer _music = new MediaPlayer();
 
 
+        //user choice property
         public string UserChoice
         {
             get { return _userChoice; }
@@ -27,6 +28,7 @@ namespace Pokedex
             }
         }
 
+        //cpu choice property
         public string CpuChoice
         {
             get { return _cpuChoice; }
@@ -39,6 +41,7 @@ namespace Pokedex
             }
         }
 
+        //Wins property
         public int Wins
         {
             get { return _wins; }
@@ -51,6 +54,7 @@ namespace Pokedex
             }
         }
 
+        //Draw Property
         public int Draw
         {
             get { return _draw; }
@@ -63,6 +67,7 @@ namespace Pokedex
             }
         }
 
+        //Loss property
         public int Loss
         {
             get { return _loss; }
@@ -75,10 +80,10 @@ namespace Pokedex
             }
         }
 
-
+        // logic of the game
         public void Logic()
         {
-            
+            // stores choices within a list and then randomises cpu choice of fire, water and grass
             Random random = new Random();
             List<string> choice = new List<string> { "water", "fire", "grass" };
             int index = random.Next(choice.Count);
@@ -97,30 +102,8 @@ namespace Pokedex
                 _wins += 1;
             }
 
-
-            if (_wins >= 5)
-            {
-                _wins = 0;
-                _loss = 0;
-                _draw = 0;
-            }
-            else if (_loss >= 5)
-            {
-                _wins = 0;
-                _loss = 0;
-                _draw = 0;
-            }
-        }
-
-        public void WinGame()
-        {
-            if(_wins >= 5)
-            {
-                _wins = 0;
-                _loss = 0;
-                _draw = 0;
-            }
-            else if(_loss >= 5)
+            // if wins or loss is equaled to 5 then reset count of wins/loss/draw property
+            if (_wins >= 5 || _loss >= 5)
             {
                 _wins = 0;
                 _loss = 0;
