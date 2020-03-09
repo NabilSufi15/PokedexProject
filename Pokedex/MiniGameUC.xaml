@@ -18,7 +18,8 @@
                 <Button Content="GRASS" Background="#F2222222" Foreground="Firebrick" BorderBrush="{x:Null}" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="42,380,0,0" VerticalAlignment="Top" Click="Button_Grass"/>
 
                 <!-- users images -->
-                <Image x:Name="water1" Height="200" Width="150" Visibility="Visible" Source="C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\Asset/Images/Blastoise.png" Margin="41,85,612,200"/>
+                <Image x:Name="Ash" Height="200" Width="150" Visibility="Visible" Source="C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\Asset/Images/Ash.png" Margin="41,85,612,200"/>
+                <Image x:Name="water1" Height="200" Width="150" Visibility="Hidden" Source="C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\Asset/Images/Blastoise.png" Margin="41,85,612,200"/>
                 <Image x:Name="grass1" Height="200" Width="150" Visibility="Hidden" Source="C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\Asset/Images/Venasaur.png" Margin="41,85,612,200"/>
                 <Image x:Name="fire1" Height="200" Width="150" Visibility="Hidden" Source="C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\Asset/Images/Charizard.png" Margin="41,85,612,200"/>
 
@@ -28,9 +29,10 @@
         <!-- cpus pokemon and labels transitions from left to right-->
         <materialDesign:TransitioningContent x:Name="TransitionSlide2" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:5.8}">
             <Grid>
+                <Image x:Name="Gary" Height="200" Width="150" Visibility="Visible" Source="C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\Asset/Images/Gary.png" Margin="396,85,257,200"/>
                 <Image x:Name="water2" Height="200" Width="150" Visibility="Hidden" Source="C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\Asset/Images/Blastoise.png" Margin="396,85,257,200"/>
                 <Image x:Name="grass2" Height="200" Width="150" Visibility="Hidden" Source="C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\Asset/Images/Venasaur.png" Margin="396,85,257,200"/>
-                <Image x:Name="fire2" Height="200" Width="150" Visibility="Visible" Source="C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\Asset/Images/Charizard.png" Margin="396,85,257,200"/>
+                <Image x:Name="fire2" Height="200" Width="150" Visibility="Hidden" Source="C:\Users\Tech-W148Bir\source\repos\PokedexProject\Pokedex\Asset/Images/Charizard.png" Margin="396,85,257,200"/>
 
                 <Label Content="WINS" HorizontalAlignment="Left" Margin="415,316,0,0" VerticalAlignment="Top" Width="44"/>
                 <Label Content="LOSS" HorizontalAlignment="Left" Margin="415,353,0,0" VerticalAlignment="Top" Width="44"/>

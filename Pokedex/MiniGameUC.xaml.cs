@@ -32,6 +32,7 @@ namespace Pokedex
             water1.Visibility = Visibility.Visible;
             grass1.Visibility = Visibility.Hidden;
             fire1.Visibility = Visibility.Hidden;
+            Ash.Visibility = Visibility.Hidden;
 
             game.Logic();
             ShowImage();
@@ -48,6 +49,7 @@ namespace Pokedex
             water1.Visibility = Visibility.Hidden;
             grass1.Visibility = Visibility.Hidden;
             fire1.Visibility = Visibility.Visible;
+            Ash.Visibility = Visibility.Hidden;
 
             game.Logic();
             ShowImage();
@@ -64,6 +66,7 @@ namespace Pokedex
             water1.Visibility = Visibility.Hidden;
             grass1.Visibility = Visibility.Visible;
             fire1.Visibility = Visibility.Hidden;
+            Ash.Visibility = Visibility.Hidden;
 
             game.Logic();
             ShowImage();
@@ -81,18 +84,21 @@ namespace Pokedex
                 water2.Visibility = Visibility.Visible;
                 grass2.Visibility = Visibility.Hidden;
                 fire2.Visibility = Visibility.Hidden;
+                Gary.Visibility = Visibility.Hidden;
             }
             else if (game.CpuChoice == "fire")
             {
                 water2.Visibility = Visibility.Hidden;
                 grass2.Visibility = Visibility.Hidden;
                 fire2.Visibility = Visibility.Visible;
+                Gary.Visibility = Visibility.Hidden;
             }
             else if (game.CpuChoice == "grass")
             {
                 water2.Visibility = Visibility.Hidden;
                 grass2.Visibility = Visibility.Visible;
                 fire2.Visibility = Visibility.Hidden;
+                Gary.Visibility = Visibility.Hidden;
             }
         }
 
